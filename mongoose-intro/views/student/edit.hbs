@@ -1,0 +1,13 @@
+<form action="/students/{{student._id}}?_method=PUT" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name" value="{{student.name}}">
+
+    <label for="age">Age</label>
+    <input type="number" name="age" value="{{student.age}}">
+
+    <button type="submit">Update</button>
+
+    <div>
+        <a href="/students">Back to All Students</a>
+    </div>
+</form>
